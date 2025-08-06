@@ -3,10 +3,10 @@ pipeline {
   stages {
     stage('Run MATLAB Tests') {
       steps {
-        // runMATLABTests(
-        //   sourceFolder: ['code']
-        // )
-        runMATLABBuild()
+        runMATLABTests(
+          sourceFolder: ['code']
+        )
+        // runMATLABBuild()
       }
     }
   }
