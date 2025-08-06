@@ -4,7 +4,7 @@ pipeline {
     stage('Run MATLAB Tests') {
       steps {
         runMATLABCommand(
-          command: 'runtests'
+          command: 'addpath("code");runtests("tests")'
         )
         // runMATLABTests(
         //   sourceFolder: ['code']
